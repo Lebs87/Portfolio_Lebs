@@ -1,0 +1,13 @@
+{
+  "name": "repositorio-sass",
+  "version": "1.0.0",
+  "description": "Portfolio Luis Belisario",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lebs87/Portfolio2024.git"
+  },
+  "author": "Luis Belisario"
+}
