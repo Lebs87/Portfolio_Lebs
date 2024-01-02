@@ -1,3 +1,10 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Caveat:wght@700&family=Lilita+One&display=swap');
+   /*font-family: 'Assistant', sans-serif;*/
+   /*font-family: 'Caveat', cursive;*/
+   /*font-family: 'Lilita One', sans-serif;*/
+
 body {
   margin: 0;
   height: 100vh;
@@ -15,7 +22,20 @@ nav {
   justify-content: center;
 }
 
-/* HOME, PRESENTATION, SKILLS, EXPERIENCE, CONTACT */
+.sectiontitles{
+  font-family: 'Caveat', cursive;
+  color: rgb(106, 156, 255);
+  text-shadow:
+   2px 2px 0 #000000;
+}
+
+p {
+  color: rgb(221, 236, 231);
+  font-family: 'Assistant', sans-serif;
+}
+
+
+/* BACKGROUND */
 #home, #presentation, #skills, #experience {
   height: 100vh;
 }
@@ -24,8 +44,40 @@ nav {
   height: 20vh;
 }
 
-/* CARRUSEL */
+#homeBackGround {
+  background-image: url(../images/fondo-negro-formas-onduladas-colores_1048-3762.jpg);
+  background-attachment:fixed;
+  background-position: center;
+  background-size:cover;
+}
 
+#presentationBackGround, #skillsBackGround {
+  background: rgb(68,69,47);
+  background: linear-gradient(90deg, rgba(68,69,47,0.23853291316526615) 8%, rgba(73,43,29,0.5018382352941176) 16%, rgba(83,20,71,0.9500175070028011) 42%, rgba(47,85,47,1) 53%, rgba(16,95,97,1) 79%, rgba(16,20,97,1) 88%, rgba(11,13,48,1) 96%);
+}
+
+.asideBackGround{
+  background-color: rgba(155, 155, 155, 0.35);
+  border-radius: 1em;
+}
+
+
+
+/* HOME */
+.homeProfilePicture{
+  border-radius: 50%;
+}
+
+.homeText{
+  color: rgb(106, 156, 255);
+  text-shadow:
+   2px 2px 0 #000000;
+  font-family: 'Lilita One', sans-serif;
+}
+
+
+
+/* CARRUSEL */
 .content-all{
   width: 190px;
   margin: auto;
