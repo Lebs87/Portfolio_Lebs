@@ -22,30 +22,59 @@ nav {
   justify-content: center;
 }
 
-.sectiontitles{
+p {
+  color: rgb(221, 236, 231);
+  font-family: 'Assistant', sans-serif;
+}
+
+.sectiontitles {
   font-family: 'Caveat', cursive;
   color: rgb(106, 156, 255);
   text-shadow:
    2px 2px 0 #000000;
 }
 
-p {
-  color: rgb(221, 236, 231);
-  font-family: 'Assistant', sans-serif;
+.reviewText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.reviewText:hover {
+  display: block;
 }
 
 
 /* BACKGROUND */
-#home, #presentation, #skills, #experience {
-  height: 100vh;
+#home, #experience, #presentation, #skills {
+  height: auto;
+  min-height: 100vh;
+  margin-top: 1rem;
 }
 
 #contact {
-  height: 20vh;
+  height: auto;
+  margin-top: 1rem;
 }
 
 #homeBackGround {
   background-image: url(../images/fondo-negro-formas-onduladas-colores_1048-3762.jpg);
+  background-attachment:fixed;
+  background-position: center;
+  background-size:cover;
+}
+
+#experienceBackGround {
+  background-image: url(../images/fondo-oscuro-abstracto-ondas-coloridas-que-fluyen_1048-13124.jpg);
+  background-attachment:fixed;
+  background-position: center;
+  background-size:cover;
+}
+
+#contactBackGround {
+  background-image: url(../images/fondo-onda-neon-que-fluye-suave-colorido_1017-19955.jpg);
   background-attachment:fixed;
   background-position: center;
   background-size:cover;
@@ -75,7 +104,17 @@ p {
   font-family: 'Lilita One', sans-serif;
 }
 
+/* PRESENTATION */
 
+.presentationCVButton{
+  width: 8rem;
+  height: auto;
+}
+
+/* CONTACT */
+.contactOl{
+  list-style-type: none;
+}
 
 /* CARRUSEL */
 .content-all{
