@@ -6,6 +6,7 @@
 p {
     color: map-get($map: $colors, $key: 'black');
     font-family: 'Assistant', sans-serif;
+    text-wrap: pretty;
 }
 
 .principalsTitles {

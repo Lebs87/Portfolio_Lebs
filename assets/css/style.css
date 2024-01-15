@@ -79,7 +79,8 @@ nav {
 /*font-family: 'Lilita One', sans-serif;*/
 p {
   color: black;
-  font-family: 'Assistant', sans-serif; }
+  font-family: 'Assistant', sans-serif;
+  text-wrap: pretty; }
 
 .principalsTitles, .homeText, .sectiontitles {
   color: #a08218;
