@@ -12,7 +12,53 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 1; }
+
+/* HOME */
+.homeProfilePicture {
+  border-radius: 50%; }
+  @media screen and (min-width: 200px) {
+    .homeProfilePicture {
+      width: 80%;
+      margin-bottom: 20px; } }
+  @media screen and (min-width: 768px) {
+    .homeProfilePicture {
+      width: 60%; } }
+  @media screen and (min-width: 992px) {
+    .homeProfilePicture {
+      width: 40%; } }
+
+/* PRESENTATION */
+.presentationSection {
+  align-items: center; }
+  @media screen and (min-width: 200px) {
+    .presentationSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  @media screen and (min-width: 1230px) {
+    .presentationSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.presentationDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (min-width: 200px) {
+  .mainPresentationVideo {
+    max-width: 90%; } }
+
+@media screen and (min-width: 1230px) {
+  .mainPresentationVideo {
+    max-width: 70%; } }
+
+.presentationCVButton {
+  width: 8rem; }
 
 .reviewText {
   display: -webkit-box;
@@ -23,29 +69,6 @@ nav {
 
 .reviewText:hover {
   display: block; }
-
-/* HOME */
-.homeProfilePicture {
-  border-radius: 50%; }
-
-/* PRESENTATION */
-.presentationSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.presentationDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.mainPresentationVideo {
-  max-width: 50%; }
-
-.presentationCVButton {
-  width: 8rem;
-  height: auto; }
 
 /* CONTACT */
 .contactOl {
@@ -63,17 +86,37 @@ p {
   text-shadow: 2px 2px 0 black; }
 
 .homeText {
-  font-family: 'Lilita One', sans-serif; }
+  font-family: 'Lilita One', sans-serif;
+  align-items: center; }
+  @media screen and (min-width: 200px) {
+    .homeText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+  @media screen and (min-width: 1230px) {
+    .homeText {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center; } }
 
 .sectiontitles {
   font-family: 'Caveat', cursive; }
 
-#home,
 #experience,
 #presentation,
 #skills {
   height: auto;
   min-height: 100vh; }
+
+#home {
+  height: auto;
+  min-height: 100vh;
+  align-items: center; }
+  @media screen and (min-width: 200px) {
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 #contact {
   height: auto; }

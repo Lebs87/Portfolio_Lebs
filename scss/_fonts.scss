@@ -8,7 +8,7 @@ p {
     font-family: 'Assistant', sans-serif;
 }
 
-.principalsTitles{
+.principalsTitles {
     color: map-get($map: $colors, $key: 'gold_one');
     text-shadow:
         2px 2px 0 map-get($map: $colors, $key: 'black');
@@ -16,7 +16,14 @@ p {
 
 .homeText {
     font-family: 'Lilita One', sans-serif;
-    @extend .principalsTitles
+    @extend .principalsTitles;
+    align-items: center;
+    @include media_up(ssm) {
+        @include d_flex(column, center);
+    };
+    @include media_up(xl) {
+        @include d_flex(row-reverse, center);
+    };
 }
 
 .sectiontitles {

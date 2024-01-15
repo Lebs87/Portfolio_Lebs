@@ -14,6 +14,53 @@ nav {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  z-index: 1;
+}
+
+/* HOME */
+
+.homeProfilePicture {
+  border-radius: 50%;
+  @include media_up(ssm) {
+    width: 80%;
+    margin-bottom: 20px;
+  };
+  @include media_up(md) {
+    width: 60%;
+  };
+  @include media_up(lg) {
+    width: 40%;
+  };
+}
+
+/* PRESENTATION */
+
+.presentationSection {
+  align-items: center;
+  @include media_up(ssm) {
+    @include d_flex(column, space-between);
+  };
+  @include media_up(xl) {
+    @include d_flex(row, space-between);
+  };
+}
+
+.presentationDiv {
+  @include d_flex(column, center);
+  align-items: center;
+}
+
+.mainPresentationVideo {
+  @include media_up(ssm) {
+    max-width: 90%;
+  };
+  @include media_up(xl) {
+    max-width: 70%;
+  };
+}
+
+.presentationCVButton {
+  width: 8rem;
 }
 
 .reviewText {
@@ -28,34 +75,8 @@ nav {
   display: block;
 }
 
-/* HOME */
-
-.homeProfilePicture{
-  border-radius: 50%;
-}
-
-/* PRESENTATION */
-
-.presentationSection{
-  @include d_flex(row, space-between)
-}
-
-.presentationDiv{
-  @include d_flex(column, center);
-  align-items: center;
-}
-
-.mainPresentationVideo{
-  max-width: 50%;
-}
-
-.presentationCVButton{
-  width: 8rem;
-  height: auto;
-}
-
 /* CONTACT */
 
-.contactOl{
+.contactOl {
   list-style-type: none;
 }

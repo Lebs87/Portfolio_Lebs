@@ -1,7 +1,7 @@
 {
   "author": "Luis Belisario",
   "name": "portfolio_ene_2024",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Portfolio Luis Belisario",
   "main": "index.js",
   "scripts": {

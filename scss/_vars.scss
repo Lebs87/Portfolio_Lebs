@@ -31,4 +31,4 @@ $breakpoints: (
   flex-direction: $f_direction;
   justify-content: $j_content;
 };
-// name selector{@include d_flex(column/row,flex-start/center/flex-end/space-between/space-around/space-evenly/);}
+// name selector{@include d_flex(column/row/row-reverse, flex-start/center/flex-end/space-between/space-around/space-evenly/);}

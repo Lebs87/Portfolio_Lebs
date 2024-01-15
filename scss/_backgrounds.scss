@@ -1,9 +1,17 @@
-#home,
 #experience,
 #presentation,
 #skills {
     height: auto;
     min-height: 100vh;
+}
+
+#home{
+    height: auto;
+    min-height: 100vh;
+    align-items: center;
+    @include media_up(ssm) {
+        @include d_flex(column, center);
+    }; 
 }
 
 #contact {
