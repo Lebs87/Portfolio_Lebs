@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Caveat:wght@700&family=Lilita+One&display=swap');
+/*font-family: 'Assistant', sans-serif;*/
+/*font-family: 'Caveat', cursive;*/
+/*font-family: 'Lilita One', sans-serif;*/
+
+p {
+    color: map-get($map: $colors, $key: 'black');
+    font-family: 'Assistant', sans-serif;
+}
+
+.principalsTitles{
+    color: map-get($map: $colors, $key: 'gold_one');
+    text-shadow:
+        2px 2px 0 map-get($map: $colors, $key: 'black');
+}
+
+.homeText {
+    font-family: 'Lilita One', sans-serif;
+    @extend .principalsTitles
+}
+
+.sectiontitles {
+    font-family: 'Caveat', cursive;
+    @extend .principalsTitles
+}

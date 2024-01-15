@@ -1,0 +1,58 @@
+#home,
+#experience,
+#presentation,
+#skills {
+    height: auto;
+    min-height: 100vh;
+}
+
+#contact {
+    height: auto;
+}
+
+#homeBackGround {
+    background-image: url(../images/background/1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#experienceBackGround {
+    background-image: url(../images/background/3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#contactBackGround {
+    background-image: url(../images/background/2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#presentationBackGround,
+#skillsBackGround {
+    background: rgb(236, 231, 219);
+}
+
+.separation {
+    background: rgb(198, 207, 127);
+    background: radial-gradient(circle, rgba(198, 207, 127, 1) 35%, rgba(255, 255, 255, 1) 60%, rgba(195, 193, 109, 1) 64%, rgba(130, 90, 29, 1) 68%, rgba(115, 64, 17, 1) 72%, rgba(130, 90, 29, 1) 76%, rgba(195, 193, 109, 1) 80%, rgba(255, 255, 255, 1) 84%, rgba(195, 193, 109, 1) 88%, rgba(158, 130, 24, 1) 92%, rgba(93, 45, 0, 1) 96%);
+    height: 40px;
+}
+
+.asideBackGround {
+    background-color: rgba(155, 155, 155, 0.35);
+    border-radius: 1em;
+}
+
+section h4 {
+    background-color: blanchedalmond;
+}
+
+.skillsarticleBg {
+    background-color: rgba(253, 253, 253, 0.605);
+    border-radius: 1rem;
+    margin: 1em;
+}

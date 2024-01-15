@@ -1,0 +1,118 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Caveat:wght@700&family=Lilita+One&display=swap");
+body {
+  margin: 0;
+  height: 100vh; }
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 5px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center; }
+
+.reviewText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden; }
+
+.reviewText:hover {
+  display: block; }
+
+/* HOME */
+.homeProfilePicture {
+  border-radius: 50%; }
+
+/* PRESENTATION */
+.presentationSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.presentationDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.mainPresentationVideo {
+  max-width: 50%; }
+
+.presentationCVButton {
+  width: 8rem;
+  height: auto; }
+
+/* CONTACT */
+.contactOl {
+  list-style-type: none; }
+
+/*font-family: 'Assistant', sans-serif;*/
+/*font-family: 'Caveat', cursive;*/
+/*font-family: 'Lilita One', sans-serif;*/
+p {
+  color: black;
+  font-family: 'Assistant', sans-serif; }
+
+.principalsTitles, .homeText, .sectiontitles {
+  color: #a08218;
+  text-shadow: 2px 2px 0 black; }
+
+.homeText {
+  font-family: 'Lilita One', sans-serif; }
+
+.sectiontitles {
+  font-family: 'Caveat', cursive; }
+
+#home,
+#experience,
+#presentation,
+#skills {
+  height: auto;
+  min-height: 100vh; }
+
+#contact {
+  height: auto; }
+
+#homeBackGround {
+  background-image: url(../images/background/1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
+#experienceBackGround {
+  background-image: url(../images/background/3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
+#contactBackGround {
+  background-image: url(../images/background/2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
+#presentationBackGround,
+#skillsBackGround {
+  background: #ece7db; }
+
+.separation {
+  background: #c6cf7f;
+  background: radial-gradient(circle, #c6cf7f 35%, white 60%, #c3c16d 64%, #825a1d 68%, #734011 72%, #825a1d 76%, #c3c16d 80%, white 84%, #c3c16d 88%, #9e8218 92%, #5d2d00 96%);
+  height: 40px; }
+
+.asideBackGround {
+  background-color: rgba(155, 155, 155, 0.35);
+  border-radius: 1em; }
+
+section h4 {
+  background-color: blanchedalmond; }
+
+.skillsarticleBg {
+  background-color: rgba(253, 253, 253, 0.605);
+  border-radius: 1rem;
+  margin: 1em; }

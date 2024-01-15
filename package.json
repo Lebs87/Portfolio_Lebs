@@ -1,13 +1,21 @@
 {
-  "name": "repositorio-sass",
-  "version": "1.0.0",
+  "author": "Luis Belisario",
+  "name": "portfolio_ene_2024",
+  "version": "1.1.0",
   "description": "Portfolio Luis Belisario",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node my-tests.js",
+    "build-css": "node-sass --include-path scss scss/main.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "license": "ISC",
   "dependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "node-sass": "^9.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lebs87/Portfolio2024.git"
-  },
-  "author": "Luis Belisario"
+  } 
 }

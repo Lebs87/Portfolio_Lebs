@@ -1,0 +1,34 @@
+// colors
+$colors: (
+  'white': hsl(0, 0%, 96%),
+  'blue': hsl(202, 100%, 29%),
+  'lightblue': hsl(219, 100%, 56%),
+  'verylightblue': hsl(220, 48%, 82%),
+  'black':hsl(120, 100%, 0%),
+  'gold_one':hsl(47, 74%, 36%),
+  'gold_two':hsl(47, 74%, 36%) 92%,
+
+);
+
+//breakpoints
+$breakpoints: (
+  ssm: 200px,
+  sm : 576px,
+  md : 768px,
+  lg : 992px,
+  xl : 1230px,
+);
+
+@mixin media_up ($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content
+  }
+};
+// name selector{@include media_up(ssm/sm/md/lg){Element to changue}}
+
+@mixin d_flex ($f_direction, $j_content) {
+  display: flex;
+  flex-direction: $f_direction;
+  justify-content: $j_content;
+};
+// name selector{@include d_flex(column/row,flex-start/center/flex-end/space-between/space-around/space-evenly/);}

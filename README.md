@@ -2,7 +2,40 @@
 
 <h2 align="center">Hi 👋, I'm Luis Belisario Fullstack Developer</h2>
 
+#### Link to portfolio: [Portfolio_Lebs](https://lebs87.github.io/Portfolio_Lebs/)
+
 ----    
+<p>When starting the development of my portfolio, I carried out an analysis of the requirements of my project; so when delimiting the scope, I decided to work only using HTML, CSS, SASS, and BOOTSTRAP; Since it is a static page and without the genuine need to expand its functionality, it was inappropriate to implement a javascript library or framework.</p>
+
+<p>I can highlight that after several designs, I managed to make a model with a modern and simple style. It consists of a single screen divided into several blocks, where a home page is shown with my image and greeting, a block with my resume in English and Spanish, plus a video that gives a brief presentation and welcome to the portfolio; then another block where I show the work and personal projects I have worked on; then a block where I describe the tools I use; and finally a block where I indicate my availability and contact methods</p>
+
+<p>This portfolio is fully responsive and its design has the flexibility to allow me to expand or modify the data shown without having to alter the initial structure.</p>
+
+<p>I hope you like it and that it serves as a contribution to our community.</p>
+
+----
+## Steps to run the project locally
+
+1. Clone the repository
+
+```
+git clone https://github.com/Lebs87/Portfolio_Lebs.git
+```
+2. Open it in a code edit and install the dependencies
+
+```
+npm install
+```
+3. Build CSS
+```
+npm run build-css
+```
+4. Watch CSS
+```
+npm run watch-css
+```
+
+----
 
 <h3 align="center">If you want to know more about me, I leave you a little of my info:</h3>
 

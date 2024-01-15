@@ -1,0 +1,61 @@
+/* GENERAL */
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 5px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.reviewText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.reviewText:hover {
+  display: block;
+}
+
+/* HOME */
+
+.homeProfilePicture{
+  border-radius: 50%;
+}
+
+/* PRESENTATION */
+
+.presentationSection{
+  @include d_flex(row, space-between)
+}
+
+.presentationDiv{
+  @include d_flex(column, center);
+  align-items: center;
+}
+
+.mainPresentationVideo{
+  max-width: 50%;
+}
+
+.presentationCVButton{
+  width: 8rem;
+  height: auto;
+}
+
+/* CONTACT */
+
+.contactOl{
+  list-style-type: none;
+}
