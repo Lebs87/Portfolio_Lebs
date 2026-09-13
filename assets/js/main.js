@@ -202,7 +202,7 @@ const i18n = {
         issuer: "Coderhouse & PedidosYa • 2023"
       },
       react: {
-        title: "React JS (Top 10%)",
+        title: "React JS",
         issuer: "Coderhouse • 2022"
       },
       javascript: {
@@ -218,7 +218,7 @@ const i18n = {
         issuer: "Udemy & Enetic • 2024"
       },
       desarrolloweb: {
-        title: "Desarrollo Web (Top 10%)",
+        title: "Desarrollo Web",
         issuer: "Coderhouse • 2022"
       }
     },
@@ -441,7 +441,7 @@ const i18n = {
         issuer: "Coderhouse & PedidosYa • 2023"
       },
       react: {
-        title: "React JS (Top 10%)",
+        title: "React JS",
         issuer: "Coderhouse • 2022"
       },
       javascript: {
@@ -457,7 +457,7 @@ const i18n = {
         issuer: "Udemy & Enetic • 2024"
       },
       desarrolloweb: {
-        title: "Web Development (Top 10%)",
+        title: "Web Development",
         issuer: "Coderhouse • 2022"
       }
     },
@@ -706,8 +706,8 @@ const certificateMap = {
     fileEn: "./assets/certificates/certificate-backend.png"
   },
   react: {
-    titleEs: "React JS (Top 10% Mejor Promedio)",
-    titleEn: "React JS Specialist (Top 10% Class Honors)",
+    titleEs: "React JS",
+    titleEn: "React JS Specialist",
     issuerEs: "Coderhouse • Noviembre 2022",
     issuerEn: "Coderhouse • November 2022",
     fileEs: "./assets/certificates/certificado-react.jpg",
@@ -741,8 +741,8 @@ const certificateMap = {
     extraLabelEn: "📄 View Enetic Certificate (PDF)"
   },
   desarrolloweb: {
-    titleEs: "Desarrollo Web (Top 10% Mejor Promedio)",
-    titleEn: "Web Development (Top 10% Class Honors)",
+    titleEs: "Desarrollo Web",
+    titleEn: "Web Development",
     issuerEs: "Coderhouse • Julio 2022",
     issuerEn: "Coderhouse • July 2022",
     fileEs: "./assets/certificates/certificado-desarrolloweb.jpg",
