@@ -1,343 +1,1061 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dev Lebs</title>
-  <link rel="icon" href="./assets/images/l.svg" type="image/x-icon">
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- JS -->
-  <link defer href="assets/js/fondo.js">
+  <title>Luis Belisario | Full Stack Developer & BI Data Analyst</title>
+  <meta name="description"
+    content="Portafolio profesional de Luis Belisario. Full Stack Developer y BI & Data Analyst especializado en React, Node.js, TypeScript, PostgreSQL y Power BI en Madrid, España.">
+  <meta name="keywords"
+    content="Luis Belisario, Full Stack Developer, BI Developer, Data Analyst, React, Node.js, TypeScript, Power BI, PostgreSQL, Madrid">
+  <meta name="author" content="Luis Belisario">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luis Belisario | Full Stack Developer & BI Data Analyst">
+  <meta property="og:description"
+    content="Portafolio profesional de desarrollo web Full Stack y soluciones de Business Intelligence y Analítica de Datos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lebs87.github.io/Portfolio_Lebs/">
+  <meta property="og:image" content="./assets/images/fotoluis.jpeg">
+
+  <link rel="icon" href="./assets/images/l.svg" type="image/svg+xml">
+  
+  <!-- Google Fonts: Rajdhani (Sci-Fi Condensed) & Space Grotesk (Tech UI) & Devicon Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Main JavaScript -->
+  <script defer src="./assets/js/main.js"></script>
 </head>
 
 <body>
-  <main>
 
-    <!---------------------------------LINKS---------------------------------------->
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">LB</div>
+        <span>Luis Belisario</span>
+      </a>
 
-    <aside>
-      <nav>
-        <ol class="navbar-nav me-auto mb-2 mb-lg-0 asideBackGround">
-          <li class="nav-item m-2">
-            <a href="https://www.linkedin.com/in/luisbelisario/">
-              <img src="assets/images/linkedin.svg" width="50vp" alt="Linkedin" class="nav-link">
-            </a>
-          </li>
-          <li class="nav-item m-2">
-            <a href="https://github.com/Lebs87">
-              <img src="assets/images/github.svg" width="50vp" alt="Github" class="nav-link">
-            </a>
-          </li>
-          <li class="nav-item m-2">
-            <a aria-label="Chat on WhatsApp"
-              href="https://wa.me/34663102885?text=Hi!%20I'm%20interested%20in%20your%20developer%20profile"><img
-                alt="Chat on WhatsApp" src="assets/images/whatsApp.svg" class="nav-link" width="50vp" />
-            </a>
-          </li>
-          <li class="nav-item m-2">
-            <a href="https://t.me/1544770362" title="LEBS87" target="_blank">
-              <img src="assets/images/telegram.svg" width="50vp" alt="Telegram" class="nav-link">
-            </a>
-          </li>
-        </ol>
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">Experiencia</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Proyectos</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
       </nav>
-    </aside>
 
-    <!---------------------------------HOME---------------------------------------->
-    <div id="homeBackGround">
-      <section id="home" class="container">
-        <article class="homeText">
-          <img src="assets/images/fotoluis_Background Removal.png" alt="Imagen de Perfil de Luis Belisario" class="homeProfilePicture">
-          <div class="m-3">
-            <h1 class="fs-1">Hi! I'm Luis Belisario</h1>
-            <h2 class="fs-1">Full Stack Developer</h2>
-          </div>
-        </article>
-      </section>
-    </div>
-    <div class="separation"></div>
-    <!---------------------------------PRESENTATION---------------------------------------->
-    <div id="presentationBackGround">
-      <div id="presentation" class="container">
-        <h2 class="sectiontitles fs-1 p-5 text-center">About me</h2>
-        <section class="presentationSection">
-          <video src="./assets/videos/portfolioLuis.mp4" class="mainPresentationVideo" controls></video>
-          <div class="presentationDiv">
-            <h3 class="sectiontitles fs-3 m-3">English</h3>
-            <a href="./assets/cv/CV Luis 2024 en.pdf" download="CV_Luis_Belisario"><img
-                src="./assets/images/buttons/btn_cv-removebg-preview.png" alt="Download my CV"
-                class="presentationCVButton m-1"></a>
-          </div>
-          <div class="presentationDiv">
-            <h3 class="sectiontitles fs-3 m-3">Spanish</h3>
-            <a href="./assets/cv/CV Luis 2024 es.pdf" download="CV_Luis_Belisario"><img
-                src="./assets/images/buttons/btn_cv-removebg-preview.png" alt="Download my CV"
-                class="presentationCVButton m-1"></a>
-          </div>
-        </section>
+      <!-- Right Actions: Theme Toggle, Language Switcher & CV Button -->
+      <div class="nav-actions">
+        <button type="button" class="theme-btn" id="themeToggle" aria-label="Cambiar tema" title="Modo Claro / Oscuro"><i class="ri-moon-line"></i></button>
+
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="./cv.html" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav.viewCV">
+          Ver CV
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Abrir menú de navegación">
+          <i class="ri-menu-line"></i>
+        </button>
       </div>
     </div>
-    <div class="separation"></div>
+  </header>
 
-    <!---------------------------------EXPERIENCE---------------------------------------->
-    <div id="experienceBackGround">
-      <section id="experience" class="container pb-5">
-        <h2 class="sectiontitles fs-1 p-5 text-center">Experience</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-          <div class="col my-3">
-            <div class="card text-bg-secondary text-center">
-              <img src="./assets/images/Celta.png" class="card-img-top" alt="Celta Consulting Page">
-              <div class="card-body">
-                <h5 class="card-title">Celta Consulting</h5>
-                <p><b>Development in Celta Consulting</b></p>
-                <p class="card-text reviewText">I am currently working on refactoring the main page and developing an
-                  application in Angular for the company's HR.</p>
-                <a href="https://grupocelta.com.ar/#!/-home/" class="btn btn-primary">Celta Group Page</a>
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span data-i18n="hero.badge">Disponible para proyectos y oportunidades en Madrid / Remoto</span>
+            </div>
+
+            <p class="hero-greeting" data-i18n="hero.greeting">Hola, soy</p>
+            <h1 class="hero-title" data-i18n="hero.name">Luis Belisario</h1>
+            <h2 class="hero-role" data-i18n="hero.role">Full Stack Developer | BI & Data Analyst</h2>
+            
+            <p class="hero-summary" data-i18n="hero.summary">
+              Especializado en React, Node.js y soluciones de Business Intelligence orientadas a negocio.
+              Convierto requerimientos complejos en aplicaciones web escalables, pipelines de datos y dashboards de alto impacto.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary" data-i18n="hero.btnProjects">Ver Proyectos</a>
+              <a href="./cv.html" target="_blank" class="btn btn-outline" data-i18n="hero.btnCvOnline">Ver CV Online / Imprimir</a>
+              <a href="./assets/cv/CV_Luis_Belisario_ES.pdf" download="CV_Luis_Belisario_ES.pdf"
+                class="btn btn-outline cv-download-link" data-i18n="nav.downloadCV">
+                Descargar PDF
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://www.linkedin.com/in/luisbelisario" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" aria-label="LinkedIn Luis Belisario" title="LinkedIn">
+                <img src="./assets/images/linkedin.svg" alt="LinkedIn" width="20" height="20">
+              </a>
+              <a href="https://github.com/Lebs87" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" aria-label="GitHub Lebs87" title="GitHub">
+                <img src="./assets/images/github.svg" alt="GitHub" width="20" height="20">
+              </a>
+              <a href="https://wa.me/34663102885?text=Hola%20Luis,%20he%20visto%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar."
+                target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp" title="WhatsApp">
+                <img src="./assets/images/whatsApp.svg" alt="WhatsApp" width="20" height="20">
+              </a>
+              <a href="mailto:belisarioluis21@gmail.com" class="social-icon-btn" aria-label="Email" title="Email">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="avatar-wrapper" id="avatarWrapper">
+              <div class="avatar-glow"></div>
+
+              <!-- Interactive Skills Planetary Orbit System (Multi-Plane Saturn 3D) -->
+              <div class="orbit-system" id="orbitSystem" aria-label="Sistema orbital de habilidades técnicas">
+                <!-- 3D Perspective Stage -->
+                <div class="orbit-stage" aria-hidden="true">
+                  <!-- Orbit Visual Guide Rings -->
+                  <div class="orbit-ring orbit-ring-inner"></div>
+                  <div class="orbit-ring orbit-ring-outer"></div>
+
+                  <!-- Orbit Planet Carriers -->
+                  <div class="orbit-track orbit-track-inner" id="orbitTrackInner"></div>
+                  <div class="orbit-track orbit-track-outer" id="orbitTrackOuter"></div>
+                </div>
+
+                <!-- Back to Categories Button with Active Category Indicator -->
+                <button type="button" class="orbit-back-btn" id="orbitBackBtn" aria-label="Volver a áreas técnicas">
+                  <i class="ri-arrow-go-back-line"></i>
+                  <span class="orbit-category-tag" id="orbitCategoryPill"></span>
+                  <span class="orbit-back-sep" aria-hidden="true">•</span>
+                  <span id="orbitBackText" data-i18n="orbit.back">Volver a Áreas</span>
+                </button>
+
+                <!-- Floating Tooltip Card -->
+                <div class="orbit-tooltip" id="orbitTooltip" role="tooltip" aria-hidden="true">
+                  <div class="orbit-tooltip-header">
+                    <span class="orbit-tooltip-dot" id="orbitTooltipDot"></span>
+                    <strong class="orbit-tooltip-title" id="orbitTooltipTitle">Habilidades Técnicas</strong>
+                  </div>
+                  <p class="orbit-tooltip-desc" id="orbitTooltipDesc">Pasa el ratón para pausar y haz clic para explorar herramientas</p>
+                </div>
+              </div>
+
+              <div class="avatar-img-frame" id="avatarImgFrame">
+                <img src="./assets/images/fotoluis.jpeg" alt="Lic. Luis Eduardo Belisario" width="320" height="320">
               </div>
             </div>
           </div>
-          <div class="col my-3">
-            <div class="card text-bg-secondary text-center">
-              <img src="./assets/images/Coma.png" class="card-img-top" alt="Conectando Materiales page">
-              <div class="card-body">
-                <h5 class="card-title">Conectando Materiales</h5>
-                <p><b>Development in Gurus AWS</b></p>
-                <p class="card-text reviewText">In this project I served as Front-end Leader. It is a web application
-                  for auctions of products and services, which is based in Argentina, I implemented the use of good
-                  practices, carried out time estimation, team management and analysis of the project needs for the
-                  implementation of technological solutions.</p>
-                <a href="https://conectandomateriales.com/home" class="btn btn-primary">Conectando Materiales Page</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="about.tag">Conóceme</span>
+          <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about.p1">
+              Soy <strong>Full Stack Developer y Licenciado</strong> con sólida experiencia en la creación de aplicaciones web, diseño de APIs robustas y desarrollo de soluciones de Business Intelligence orientadas a la toma de decisiones estratégicas.
+            </p>
+            <p data-i18n="about.p2">
+              Cuento con un fuerte dominio de <strong>JavaScript, TypeScript, React y Node.js</strong>, complementado con capacidades analíticas avanzadas en <strong>PostgreSQL, Power BI, Grafana y arquitecturas ETL</strong>. He participado en proyectos de gran envergadura en sectores de logística, seguros, e-commerce y Big Data.
+            </p>
+            <p data-i18n="about.p3">
+              Me apasiona transformar datos en valor operativo y construir interfaces intuitivas y de alto rendimiento que resuelvan problemas reales de negocio.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-number" id="yearsOfExperience">+5</div>
+                <div class="stat-label" data-i18n="about.statYears">Años de Exp.</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">Full Stack</div>
+                <div class="stat-label" data-i18n="about.statRoles">Frontend, Backend & BI</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">Madrid</div>
+                <div class="stat-label" data-i18n="about.statLocation">Madrid, España</div>
               </div>
             </div>
           </div>
-          <div class="col my-3">
-            <div class="card text-bg-secondary text-center">
-              <img src="./assets/images/Venecake.png" class="card-img-top" alt="Venecake-Sorpresas page">
-              <div class="card-body">
-                <h5 class="card-title">Venecake Sorpresas</h5>
-                <p><b>Personal Project</b></p>
-                <p class="card-text reviewText">Final Javascript at CoderHouse, consists of the construction of an
-                  e-commerce using JavaScript.</p>
-                <a href="https://lebs87.github.io/Venecake-Sorpresas/" class="btn btn-primary">Go to Venecake</a>
+
+          <!-- Presentation Video Box -->
+          <div class="about-video-box">
+            <div class="video-header">
+              <h4 data-i18n="about.videoTitle">Presentación en Video</h4>
+              <p data-i18n="about.videoSubtitle">Conoce un poco más de mi trayectoria y enfoque profesional:</p>
+            </div>
+            <div class="video-wrapper">
+              <video src="./assets/videos/portfolioLuis.mp4" controls preload="metadata" poster="./assets/images/neotalent_sice.jpg"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="experience.tag">Trayectoria</span>
+          <h2 class="section-title" data-i18n="experience.title">Experiencia Profesional</h2>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Neotalent (SICE) - Current -->
+          <div class="timeline-item active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role" data-i18n="experience.roles.neotalent.role">Full Stack Developer | BI Developer | Data Analyst</h3>
+                <span class="timeline-period" data-i18n="experience.roles.neotalent.period">Mayo 2024 – Actual</span>
+              </div>
+              <div class="timeline-company">
+                <span><i class="ri-building-line"></i> Neotalent (SICE)</span> • <span data-i18n="experience.roles.neotalent.location">Madrid, España</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="experience.roles.neotalent.d1">Desarrollo y mantenimiento de aplicaciones web frontend y backend para clientes corporativos internos y externos.</li>
+                <li data-i18n="experience.roles.neotalent.d2">Diseño e implementación de dashboards de Business Intelligence y procesos ETL para monitoreo operativo de métricas en tiempo real e históricas.</li>
+                <li data-i18n="experience.roles.neotalent.d3">Optimización y automatización de procesos utilizando React, Node.js, Python y SQL sobre PostgreSQL.</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Power BI</span>
+                <span class="tech-badge">Grafana</span>
+                <span class="tech-badge">Docker</span>
               </div>
             </div>
           </div>
-          <div class="col my-3">
-            <div class="card text-bg-secondary text-center">
-              <img src="./assets/images/Fabihogar.png" class="card-img-top" alt="Fabyhogar repository">
-              <div class="card-body">
-                <h5 class="card-title">Faby Hogar</h5>
-                <p><b>Personal Project</b></p>
-                <p class="card-text reviewText">Final React project at CoderHouse, consists of the construction of an
-                  e-commerce using the react library, capable of showing various products to the user, seeing product
-                  details, shopping cart, interacting with the database in firestore, consulting details Shopping. The
-                  tools used and their use within the project are detailed below in more depth. To develop this project
-                  I decided to work with requirements that were as real as possible, so I worked with a physical store
-                  located in the City of Buenos Aires.</p>
-                <a href="https://fabihogar.netlify.app/" class="btn btn-primary">Go to fabyhogar</a>
+
+          <!-- Celta Consulting -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role" data-i18n="experience.roles.celta.role">Full Stack Developer</h3>
+                <span class="timeline-period" data-i18n="experience.roles.celta.period">Feb 2022 – Mayo 2024</span>
+              </div>
+              <div class="timeline-company">
+                <span><i class="ri-building-line"></i> Celta Consulting</span> • <span data-i18n="experience.roles.celta.location">Argentina / Remoto</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="experience.roles.celta.d1">Desarrollo de soluciones web y plataformas para gestión de flotas y administración de pólizas.</li>
+                <li data-i18n="experience.roles.celta.d2">Participación en el desarrollo e integración de sistemas internos para RRHH y operaciones administrativas.</li>
+                <li data-i18n="experience.roles.celta.d3">Trabajo colaborativo bajo marcos ágiles (Scrum/Trello) asegurando entregas continuas y código mantenible.</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Angular</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Redux</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Scrum</span>
               </div>
             </div>
           </div>
-          <div class="col my-3">
-            <div class="card text-bg-secondary text-center">
-              <img src="./assets/images/PortfolioSass.png" class="card-img-top" alt="Fabyhogar repository">
-              <div class="card-body">
-                <h5 class="card-title">Portafolio con SASS</h5>
-                <p><b>Personal Project</b></p>
-                <p class="card-text reviewText">Final Web Developer project at CoderHouse, consists of the construction
-                  of my portfolio using SASS.</p>
-                <a href="https://lebs87.github.io/Portfolio_Belisario_SASS/" class="btn btn-primary">Go to fabyhogar</a>
+
+          <!-- Gurus AWS / Conectando Materiales -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role" data-i18n="experience.roles.gurus.role">Full Stack Developer / Frontend Leader</h3>
+                <span class="timeline-period" data-i18n="experience.roles.gurus.period">Jun 2023 – Oct 2023</span>
+              </div>
+              <div class="timeline-company">
+                <span><i class="ri-building-line"></i> Celta Consulting (Gurus AWS - Conectando Materiales)</span> • <span data-i18n="experience.roles.gurus.location">Argentina / Remoto</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="experience.roles.gurus.d1">Liderazgo técnico de Frontend para plataforma web de subastas de productos y servicios.</li>
+                <li data-i18n="experience.roles.gurus.d2">Estimación técnica, resolución de incidencias complejas y despliegue de mejoras funcionales continuas.</li>
+                <li data-i18n="experience.roles.gurus.d3">Implementación de buenas prácticas de arquitectura y control de versiones mediante Git y AWS CodeCommit.</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Redux</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Axios</span>
+                <span class="tech-badge">AWS CodeCommit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Freelance -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role" data-i18n="experience.roles.freelance.role">Web Developer Freelance</h3>
+                <span class="timeline-period" data-i18n="experience.roles.freelance.period">Sep 2021 – Feb 2022</span>
+              </div>
+              <div class="timeline-company">
+                <span><i class="ri-global-line"></i> Proyectos Independientes</span> • <span data-i18n="experience.roles.freelance.location">Remoto</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li data-i18n="experience.roles.freelance.d1">Desarrollo de sitios web a medida para e-commerce y nuevos emprendimientos.</li>
+                <li data-i18n="experience.roles.freelance.d2">Personalización y administración de plataformas CMS, optimización visual y de rendimiento.</li>
+                <li data-i18n="experience.roles.freelance.d3">Implementación de interfaces totalmente responsivas con HTML5, SASS y JavaScript.</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">SASS</span>
+                <span class="tech-badge">WordPress</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projects.tag">Portafolio</span>
+          <h2 class="section-title" data-i18n="projects.title">Proyectos Destacados</h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button type="button" class="filter-btn active" data-filter="all" data-i18n="projects.filterAll">Todos</button>
+          <button type="button" class="filter-btn" data-filter="fullstack" data-i18n="projects.filterFullStack">Full Stack</button>
+          <button type="button" class="filter-btn" data-filter="bi" data-i18n="projects.filterBI">BI & Data</button>
+          <button type="button" class="filter-btn" data-filter="mobile" data-i18n="projects.filterMobile">Mobile</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- 1. Neotalent BI & ETL Operations -->
+          <div class="project-card" data-category="bi fullstack">
+            <div class="project-img-wrapper">
+              <img src="./assets/images/neotalent_sice.jpg" alt="Monitoreo Operativo & Dashboards ETL" loading="lazy">
+              <span class="project-category-pill">BI & Full Stack</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="projects.items.neotalent.title">Monitoreo Operativo & Dashboards ETL</h3>
+              <p class="project-desc" data-i18n="projects.items.neotalent.desc">
+                Plataforma de visualización de datos operacionales, métricas en tiempo real y pipelines ETL para infraestructura y logística.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Power BI</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Grafana</span>
+                <span class="project-tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="#experience" class="btn btn-outline btn-sm" data-i18n="projects.repoBtn">Detalles en Experiencia</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Biblia Kiri Mobile App -->
+          <div class="project-card" data-category="mobile">
+            <div class="project-img-wrapper">
+              <img src="./assets/images/biblia_kiri.jpg" alt="Biblia Kiri App Móvil" loading="lazy">
+              <span class="project-category-pill">Mobile App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="projects.items.bibliaKiri.title">Biblia Kiri - App Móvil</h3>
+              <p class="project-desc" data-i18n="projects.items.bibliaKiri.desc">
+                Aplicación móvil completa publicada en Google Play Store para lectura, búsqueda y estudio bíblico interactivo.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React Native</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">Android</span>
+                <span class="project-tag">Google Play</span>
+              </div>
+              <div class="project-links">
+                <a href="https://play.google.com/store/apps/details?id=com.kiri.biblia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="projects.visitBtn">Google Play</a>
+                <a href="https://github.com/Lebs87" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" data-i18n="projects.repoBtn">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Conectando Materiales (Corporate) -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="./assets/images/Coma.png" alt="Conectando Materiales" loading="lazy">
+              <span class="project-category-pill">Full Stack Web</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="projects.items.conectandoMateriales.title">Conectando Materiales</h3>
+              <p class="project-desc" data-i18n="projects.items.conectandoMateriales.desc">
+                Plataforma B2B de subastas y compras industriales en tiempo real desarrollada para Gurus AWS (proyecto corporativo cerrado).
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Redux</span>
+                <span class="project-tag">AWS</span>
+                <span class="project-tag">Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#experience" class="btn btn-outline btn-sm" data-i18n="projects.repoBtn">Detalles en Experiencia</a>
+                <span class="project-status-tag" data-i18n="projects.items.conectandoMateriales.status">Plataforma Corporativa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Celta Consulting Platform -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="./assets/images/Celta.png" alt="Celta Consulting" loading="lazy">
+              <span class="project-category-pill">Full Stack</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="projects.items.celtaHR.title">Sistema de Gestión & RRHH</h3>
+              <p class="project-desc" data-i18n="projects.items.celtaHR.desc">
+                Suite de soluciones web para administración de recursos humanos, pólizas y gestión logística de flotas.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Angular</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://grupocelta.com.ar/#!/-home/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" data-i18n="projects.visitBtn">Grupo Celta</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Faby Hogar E-commerce -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="./assets/images/Fabihogar.png" alt="Faby Hogar" loading="lazy">
+              <span class="project-category-pill">E-commerce</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="projects.items.fabyHogar.title">Faby Hogar E-commerce</h3>
+              <p class="project-desc" data-i18n="projects.items.fabyHogar.desc">
+                Tienda online desarrollada para un comercio físico real, con catálogo interactivo, carrito y base de datos Firestore.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Firebase Firestore</span>
+                <span class="project-tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fabihogar.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="projects.visitBtn">Ver Tienda</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Venecake Sorpresas -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <img src="./assets/images/Venecake.png" alt="Venecake Sorpresas" loading="lazy">
+              <span class="project-category-pill">JavaScript App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="projects.items.venecake.title">Venecake Sorpresas</h3>
+              <p class="project-desc" data-i18n="projects.items.venecake.desc">
+                E-commerce interactivo con carrito de compras dinámico, filtros por categoría y checkout personalizado.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">SASS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://lebs87.github.io/Venecake-Sorpresas/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" data-i18n="projects.visitBtn">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skills.tag">Tecnologías</span>
+          <h2 class="section-title" data-i18n="skills.title">Habilidades Técnicas</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">
+            Un perfil integral que conecta el desarrollo de software moderno con la inteligencia de negocio y analítica de datos.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Frontend -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-card-icon"><i class="ri-code-s-slash-line"></i></div>
+              <h3 data-i18n="skills.catCore">Frontend & Lenguajes</h3>
+            </div>
+            <div class="skills-item-list">
+              <div class="skill-pill">
+                <i class="devicon-react-original colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <span class="skill-desc" data-i18n="skills.desc.react">Biblioteca UI & SPA</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-typescript-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">TypeScript</span>
+                  <span class="skill-desc" data-i18n="skills.desc.typescript">JavaScript Tipado</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-javascript-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-desc" data-i18n="skills.desc.javascript">Lenguaje Core Web</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-angularjs-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Angular</span>
+                  <span class="skill-desc" data-i18n="skills.desc.angular">Framework Frontend</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-react-original colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">React Native</span>
+                  <span class="skill-desc" data-i18n="skills.desc.reactNative">Apps Móviles Nativas</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-nextjs-original"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Next.js</span>
+                  <span class="skill-desc" data-i18n="skills.desc.nextjs">SSR & Full Stack React</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-html5-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-desc" data-i18n="skills.desc.html5">Estructura Semántica</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-css3-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 / SASS</span>
+                  <span class="skill-desc" data-i18n="skills.desc.css3">Estilos & Preprocesador</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Bootstrap</span>
+                  <span class="skill-desc" data-i18n="skills.desc.bootstrap">Framework CSS Responsive</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-redux-original colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Redux</span>
+                  <span class="skill-desc" data-i18n="skills.desc.redux">Gestión de Estado Global</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & DB -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-card-icon"><i class="ri-server-line"></i></div>
+              <h3 data-i18n="skills.catBackend">Backend & Bases de Datos</h3>
+            </div>
+            <div class="skills-item-list">
+              <div class="skill-pill">
+                <i class="devicon-nodejs-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-desc" data-i18n="skills.desc.nodejs">Entorno Backend JS</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-express-original"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Express.js</span>
+                  <span class="skill-desc" data-i18n="skills.desc.express">Framework REST APIs</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-postgresql-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">PostgreSQL</span>
+                  <span class="skill-desc" data-i18n="skills.desc.postgresql">Base de Datos Relacional</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-mysql-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-desc" data-i18n="skills.desc.mysql">Base de Datos Relacional</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-mongodb-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-desc" data-i18n="skills.desc.mongodb">Base de Datos NoSQL</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-microsoftsqlserver-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">SQL Server</span>
+                  <span class="skill-desc" data-i18n="skills.desc.mssql">Base de Datos Empresarial</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-graphql-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">GraphQL</span>
+                  <span class="skill-desc" data-i18n="skills.desc.graphql">Lenguaje de Consulta APIs</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-nginx-original colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Nginx</span>
+                  <span class="skill-desc" data-i18n="skills.desc.nginx">Servidor Web & Proxy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Business Intelligence -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-card-icon"><i class="ri-bar-chart-box-line"></i></div>
+              <h3 data-i18n="skills.catBI">Business Intelligence & Analítica</h3>
+            </div>
+            <div class="skills-item-list">
+              <div class="skill-pill">
+                <span class="skill-emoji">📈</span>
+                <div class="skill-info">
+                  <span class="skill-name">Power BI</span>
+                  <span class="skill-desc" data-i18n="skills.desc.powerbi">Dashboards & BI</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-grafana-original colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Grafana</span>
+                  <span class="skill-desc" data-i18n="skills.desc.grafana">Métricas en Tiempo Real</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🔄</span>
+                <div class="skill-info">
+                  <span class="skill-name">ETL Pipelines</span>
+                  <span class="skill-desc" data-i18n="skills.desc.etl">Pipelines de Datos & Carga</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-python-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-desc" data-i18n="skills.desc.python">ETL & Scripting de Datos</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">⚡</span>
+                <div class="skill-info">
+                  <span class="skill-name">Power Query</span>
+                  <span class="skill-desc" data-i18n="skills.desc.powerquery">Modelado & Transformación</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🤖</span>
+                <div class="skill-info">
+                  <span class="skill-name">Power Automate</span>
+                  <span class="skill-desc" data-i18n="skills.desc.powerautomate">Automatización de Flujos</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">📊</span>
+                <div class="skill-info">
+                  <span class="skill-name">Qlik</span>
+                  <span class="skill-desc" data-i18n="skills.desc.qlik">Analítica & Dashboards</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🗄️</span>
+                <div class="skill-info">
+                  <span class="skill-name">SQL Optimization</span>
+                  <span class="skill-desc" data-i18n="skills.desc.sqlopt">Optimización de Consultas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Cloud & DevOps -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-card-icon"><i class="ri-cloud-line"></i></div>
+              <h3 data-i18n="skills.catDevOps">Cloud, DevOps & Herramientas</h3>
+            </div>
+            <div class="skills-item-list">
+              <div class="skill-pill">
+                <i class="devicon-docker-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Docker</span>
+                  <span class="skill-desc" data-i18n="skills.desc.docker">Contenedores & Despliegue</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-amazonwebservices-original colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">AWS</span>
+                  <span class="skill-desc" data-i18n="skills.desc.aws">Infraestructura Cloud</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-git-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-desc" data-i18n="skills.desc.git">Control de Versiones</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-firebase-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Firebase</span>
+                  <span class="skill-desc" data-i18n="skills.desc.firebase">Backend as a Service</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">📮</span>
+                <div class="skill-info">
+                  <span class="skill-name">Postman</span>
+                  <span class="skill-desc" data-i18n="skills.desc.postman">Pruebas & Documentación</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-jira-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Jira & Trello</span>
+                  <span class="skill-desc" data-i18n="skills.desc.jira">Metodologías Ágiles</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="devicon-figma-plain colored"></i>
+                <div class="skill-info">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-desc" data-i18n="skills.desc.figma">Diseño UI & Prototipado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Additional: Certifications & Languages -->
+        <div class="extra-skills-grid">
+          <div class="extra-card">
+            <h4 data-i18n="skills.certificationsTitle">Certificaciones Profesionales</h4>
+            <div class="cert-list">
+              <!-- Full Stack Web Developer -->
+              <div class="cert-card has-cert" data-cert-key="fullstack" title="Clic para ver diploma">
+                <div class="cert-card-header">
+                  <span class="cert-icon"><i class="ri-award-line"></i></span>
+                  <div class="cert-meta">
+                    <strong class="cert-name" data-i18n="cert.fullstack.title">Desarrollo Full Stack</strong>
+                    <span class="cert-issuer" data-i18n="cert.fullstack.issuer">Coderhouse • 2023</span>
+                  </div>
+                </div>
+                <div class="cert-action">
+                  <button type="button" class="btn-cert-view" data-cert-key="fullstack">
+                    <span data-i18n="cert.btnView">Ver Diploma</span> ↗
+                  </button>
+                </div>
+              </div>
+
+              <!-- Backend Developer -->
+              <div class="cert-card has-cert" data-cert-key="backend" title="Clic para ver diploma">
+                <div class="cert-card-header">
+                  <span class="cert-icon"><i class="ri-server-line"></i></span>
+                  <div class="cert-meta">
+                    <strong class="cert-name" data-i18n="cert.backend.title">Backend Development</strong>
+                    <span class="cert-issuer" data-i18n="cert.backend.issuer">Coderhouse & PedidosYa • 2023</span>
+                  </div>
+                </div>
+                <div class="cert-action">
+                  <button type="button" class="btn-cert-view" data-cert-key="backend">
+                    <span data-i18n="cert.btnView">Ver Diploma</span> ↗
+                  </button>
+                </div>
+              </div>
+
+              <!-- React JS Specialist -->
+              <div class="cert-card has-cert" data-cert-key="react" title="Clic para ver diploma">
+                <div class="cert-card-header">
+                  <span class="cert-icon"><i class="ri-reactjs-line"></i></span>
+                  <div class="cert-meta">
+                    <strong class="cert-name" data-i18n="cert.react.title">React JS (Top 10%)</strong>
+                    <span class="cert-issuer" data-i18n="cert.react.issuer">Coderhouse • 2022</span>
+                  </div>
+                </div>
+                <div class="cert-action">
+                  <button type="button" class="btn-cert-view" data-cert-key="react">
+                    <span data-i18n="cert.btnView">Ver Diploma</span> ↗
+                  </button>
+                </div>
+              </div>
+
+              <!-- JavaScript Advanced -->
+              <div class="cert-card has-cert" data-cert-key="javascript" title="Clic para ver diploma">
+                <div class="cert-card-header">
+                  <span class="cert-icon"><i class="ri-javascript-line"></i></span>
+                  <div class="cert-meta">
+                    <strong class="cert-name" data-i18n="cert.javascript.title">JavaScript Advanced</strong>
+                    <span class="cert-issuer" data-i18n="cert.javascript.issuer">Coderhouse • 2023</span>
+                  </div>
+                </div>
+                <div class="cert-action">
+                  <button type="button" class="btn-cert-view" data-cert-key="javascript">
+                    <span data-i18n="cert.btnView">Ver Diploma</span> ↗
+                  </button>
+                </div>
+              </div>
+
+              <!-- Angular Developer -->
+              <div class="cert-card has-cert" data-cert-key="angular" title="Clic para ver diploma">
+                <div class="cert-card-header">
+                  <span class="cert-icon"><i class="ri-angularjs-line"></i></span>
+                  <div class="cert-meta">
+                    <strong class="cert-name" data-i18n="cert.angular.title">Angular Developer</strong>
+                    <span class="cert-issuer" data-i18n="cert.angular.issuer">Coderhouse • 2024</span>
+                  </div>
+                </div>
+                <div class="cert-action">
+                  <button type="button" class="btn-cert-view" data-cert-key="angular">
+                    <span data-i18n="cert.btnView">Ver Diploma</span> ↗
+                  </button>
+                </div>
+              </div>
+
+              <!-- Power BI & Data Analytics -->
+              <div class="cert-card has-cert" data-cert-key="powerbi" title="Clic para ver diploma">
+                <div class="cert-card-header">
+                  <span class="cert-icon"><i class="ri-bar-chart-2-line"></i></span>
+                  <div class="cert-meta">
+                    <strong class="cert-name" data-i18n="cert.powerbi.title">Power BI & Data Analytics</strong>
+                    <span class="cert-issuer" data-i18n="cert.powerbi.issuer">Udemy & Enetic • 2024</span>
+                  </div>
+                </div>
+                <div class="cert-action">
+                  <button type="button" class="btn-cert-view" data-cert-key="powerbi">
+                    <span data-i18n="cert.btnView">Ver Diploma</span> ↗
+                  </button>
+                </div>
+              </div>
+
+              <!-- Desarrollo Web -->
+              <div class="cert-card has-cert" data-cert-key="desarrolloweb" title="Clic para ver diploma">
+                <div class="cert-card-header">
+                  <span class="cert-icon"><i class="ri-layout-masonry-line"></i></span>
+                  <div class="cert-meta">
+                    <strong class="cert-name" data-i18n="cert.desarrolloweb.title">Desarrollo Web (Top 10%)</strong>
+                    <span class="cert-issuer" data-i18n="cert.desarrolloweb.issuer">Coderhouse • 2022</span>
+                  </div>
+                </div>
+                <div class="cert-action">
+                  <button type="button" class="btn-cert-view" data-cert-key="desarrolloweb">
+                    <span data-i18n="cert.btnView">Ver Diploma</span> ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <h4 data-i18n="skills.languagesTitle">Idiomas</h4>
+            <div class="lang-list">
+              <div class="lang-item">
+                <span class="badge">ES</span>
+                <span data-i18n="skills.langEs">Español: Nativo</span>
+              </div>
+              <div class="lang-item">
+                <span class="badge">EN</span>
+                <span data-i18n="skills.langEn">Inglés: B2 Intermedio Profesional</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <div class="separation"></div>
 
-    <!---------------------------------SKILLS---------------------------------------->
+      </div>
+    </section>
 
-    <div id="skillsBackGround">
-      <section id="skills" class="container pb-5">
-        <h2 class="sectiontitles fs-1 p-5 text-center">Skills</h2>
-        <div class="container text-center">
-          <div class="row row-cols-lg-3 justify-content-evenly">
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Programming Languages:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"
-                  class="">
-                  <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                    alt="javascript" width="40" height="40" title="Javascript" /> </a>
-                <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                    alt="typescript" width="40" height="40" title="Typescript" /> </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Frontend Development:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-                    alt="react" width="40" height="40" /></a>
-                <a href="https://angular.io" target="_blank" rel="noreferrer"><img
-                    src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40"
-                    height="40" /></a>
-                <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
-                    alt="sass" width="40" height="40" /></a>
-                <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                    alt="bootstrap" width="40" height="40" /></a>
-                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                    alt="css3" width="40" height="40" /></a>
-                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                    alt="html5" width="40" height="40" /></a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Development:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                    alt="nodejs" width="40" height="40" /> </a> <a href="https://www.nginx.com" target="_blank"
-                  rel="noreferrer">
-                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
-                    alt="nginx" width="40" height="40" /> </a> <a href="https://graphql.org" target="_blank"
-                  rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql"
-                    width="40" height="40" />
-                </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
-                    alt="express" width="40" height="40" /> </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Database:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-                    alt="mongodb" width="40" height="40" /> </a> <a href="https://mariadb.org/" target="_blank"
-                  rel="noreferrer">
-                  <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40"
-                    height="40" />
-                </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                    alt="mysql" width="40" height="40" /> </a> <a href="https://www.postgresql.org" target="_blank"
-                  rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-                    alt="postgresql" width="40" height="40" /> </a> <a href="https://www.sqlite.org/" target="_blank"
-                  rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite"
-                    width="40" height="40" /> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank"
-                  rel="noreferrer">
-                  <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40"
-                    height="40" /> </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Devops:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                    alt="aws" width="40" height="40" /> </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">as a Service(BaaS):</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer"> <img
-                    src="https://docs.amplify.aws/assets/logo-dark.svg" alt="amplify" width="40" height="40" /> </a>
-                <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img
-                    src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40"
-                    height="40" />
-                </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Testing:</h4>
-              <article class="d-flex justify-content-evenly p-2">
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-grid">
+            
+            <div class="contact-info">
+              <span class="section-tag" data-i18n="contact.tag">Hablemos</span>
+              <h3 data-i18n="contact.title">Contacto Directo</h3>
+              <p class="contact-desc" data-i18n="contact.p1">
+                Si deseas coordinar una entrevista (disponible de lunes a viernes de 08:00 a 19:00 en Madrid, España) o comentar una oportunidad, puedes escribirme directamente:
+              </p>
 
-                <a href="https://mochajs.org" target="_blank" rel="noreferrer"> <img
-                    src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40"
-                    height="40" />
+              <div class="contact-buttons">
+                <a href="https://wa.me/34663102885?text=Hola%20Luis,%20he%20visto%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar."
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <img src="./assets/images/whatsApp.svg" alt="WhatsApp" width="20" height="20">
+                  <span data-i18n="contact.whatsappBtn">Chatear por WhatsApp</span>
                 </a>
-                <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img
-                    src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40"
-                    height="40" /> </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Software:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img
-                    src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40" />
-                </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img
-                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
-                    alt="photoshop" width="40" height="40" /> </a> <a href="https://postman.com" target="_blank"
-                  rel="noreferrer">
-                  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40"
-                    height="40" /> </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Static Site Generators:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img
-                    src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40" />
+                <a href="https://www.linkedin.com/in/luisbelisario" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="linkedinContactBtn">
+                  <img src="./assets/images/linkedin.svg" alt="LinkedIn" width="18" height="18">
+                  <span data-i18n="contact.linkedinBtn">Ver Perfil en LinkedIn</span>
                 </a>
-              </article>
-            </div>
-            <div class="col h-100 skillsarticleBg">
-              <h4 class="text-center m-2">Other:</h4>
-              <article class="d-flex justify-content-evenly p-2">
-                <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img
-                    src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" />
+                <a href="mailto:belisarioluis21@gmail.com" class="btn btn-outline">
+                  <span data-i18n="contact.emailBtn">Enviar Correo</span>
                 </a>
-              </article>
+              </div>
             </div>
+
+            <div class="contact-details-box">
+              <div class="contact-detail-row">
+                <div class="detail-icon"><i class="ri-map-pin-2-line"></i></div>
+                <div class="detail-content">
+                  <h5 data-i18n="contact.locationLabel">Ubicación:</h5>
+                  <p data-i18n="contact.locationVal">Madrid, España</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-row">
+                <div class="detail-icon"><i class="ri-mail-line"></i></div>
+                <div class="detail-content">
+                  <h5 data-i18n="contact.emailLabel">Email:</h5>
+                  <a href="mailto:belisarioluis21@gmail.com">belisarioluis21@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-row">
+                <div class="detail-icon"><i class="ri-phone-line"></i></div>
+                <div class="detail-content">
+                  <h5 data-i18n="contact.phoneLabel">Teléfono / WhatsApp:</h5>
+                  <a href="tel:+34663102885">+34 663 102 885</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-row">
+                <div class="detail-icon"><i class="ri-telegram-line"></i></div>
+                <div class="detail-content">
+                  <h5>Telegram:</h5>
+                  <a href="https://t.me/1544770362" target="_blank" rel="noopener noreferrer">@LEBS87</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
-  <div class="separation"></div>
 
-  <!---------------------------------CONTACT---------------------------------------->
-  <div id="contactBackGround">
-    <footer id="contact" class="container p-5">
-      <h2 class="sectiontitles fs-1 p-5 text-center">Contact</h2>
-      <section>
-        <p class="fs-5 text-center">If an in-person interview is required, I have the possibility of scheduling
-          interviews from Monday to Friday, between 08:00 a.m. and 7:00 p.m. in Madrid, Spain. If you want a more direct
-          contact with me, you can do so through the links I leave below:</p>
-      </section>
-      <section>
-        <ol class="contactOl d-flex justify-content-center">
-          <li class="nav-item my-2 mx-5">
-            <a aria-label="Chat on WhatsApp"
-              href="https://wa.me/34663102885?text=Hi!%20I'm%20interested%20in%20your%20developer%20profile"><img
-                alt="Chat on WhatsApp" src="assets/images/whatsApp.svg" class="nav-link" width="50vp" />
-            </a>
-          </li>
-          <li class="nav-item my-2 mx-5">
-            <a href="">
-              <img src="assets/images/telegram.svg" width="50vp" alt="Telegram" class="nav-link">
-            </a>
-          </li>
-        </ol>
-      </section>
-    </footer>
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="currentYear">2026</span> Luis Belisario. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <div class="footer-links">
+        <a href="https://github.com/Lebs87/Portfolio_Lebs" target="_blank" rel="noopener noreferrer" class="footer-link">
+          GitHub Repository
+        </a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/luisbelisario" target="_blank" rel="noopener noreferrer" class="footer-link">
+          LinkedIn
+        </a>
+        <span>•</span>
+        <a href="./assets/cv/CV_Luis_Belisario_ES.pdf" download="CV_Luis_Belisario_ES.pdf" class="footer-link cv-download-link" data-i18n="nav.downloadCV">
+          Descargar CV
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== CERTIFICATE LIGHTBOX MODAL ==================== -->
+  <div class="cert-modal" id="certModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+    <div class="cert-modal-container">
+      <div class="cert-modal-header">
+        <div class="cert-modal-title-group">
+          <span class="cert-modal-icon"><i class="ri-award-line"></i></span>
+          <div>
+            <h3 id="certModalTitle">Título de Certificación</h3>
+            <p id="certModalSubtitle">Institución Emisora</p>
+          </div>
+        </div>
+        <button type="button" class="cert-modal-close" id="certModalClose" aria-label="Cerrar modal">&times;</button>
+      </div>
+      <div class="cert-modal-body">
+        <div class="cert-modal-img-wrapper">
+          <img id="certModalImg" src="" alt="Diploma de Certificación" loading="lazy">
+        </div>
+      </div>
+      <div class="cert-modal-footer">
+        <a id="certModalExtra" href="" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="display:none;">
+          📄 Ver Certificado Oficial (PDF)
+        </a>
+        <a id="certModalDownload" href="" download class="btn btn-outline btn-sm">
+          <span data-i18n="cert.modalDownload">⬇ Descargar Imagen</span>
+        </a>
+        <a id="certModalOpen" href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span data-i18n="cert.modalOpen">↗ Abrir en Nueva Pestaña</span>
+        </a>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>

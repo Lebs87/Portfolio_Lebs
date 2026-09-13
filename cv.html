@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Luis Belisario | Full Stack Developer & BI Data Analyst</title>
+  <meta name="description" content="Currículum Vitae profesional de Luis Belisario. Full Stack Developer y BI Data Analyst. Formato profesional A4 para reclutadores.">
+  <link rel="icon" href="./assets/images/l.svg" type="image/svg+xml">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="./assets/css/cv.css">
+</head>
+
+<body class="format-1page">
+
+  <!-- Top Action Toolbar (Hidden during Print) -->
+  <aside class="cv-toolbar">
+    <div class="cv-toolbar-left">
+      <a href="./index.html" class="back-btn">
+        <i class="ri-arrow-left-line"></i> <span id="backText">Volver al Portafolio</span>
+      </a>
+    </div>
+    <div class="cv-toolbar-right">
+      <div class="lang-switch-group">
+        <button type="button" class="cv-lang-btn active" data-lang="es" onclick="switchCvLang('es')">ES</button>
+        <button type="button" class="cv-lang-btn" data-lang="en" onclick="switchCvLang('en')">EN</button>
+      </div>
+      <button type="button" class="print-btn" onclick="window.print()">
+        <i class="ri-printer-line"></i> <span id="printBtnText">Guardar como PDF / Imprimir</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Printable CV Sheet -->
+  <main class="cv-sheet">
+    
+    <!-- Header -->
+    <header class="cv-header">
+      <div class="cv-avatar">
+        <img src="./assets/images/fotoluis.jpeg" alt="Lic. Luis Eduardo Belisario">
+      </div>
+      <div class="cv-title-area">
+        <h1>Lic. Luis Eduardo Belisario</h1>
+        <h2 data-cv-i18n="role">Full Stack Developer | BI & Data Analyst</h2>
+        <div class="cv-contact-bar">
+          <span class="cv-contact-item"><i class="ri-map-pin-2-line"></i> <span data-cv-i18n="location">Madrid, España</span></span>
+          <span class="cv-contact-item"><i class="ri-mail-line"></i> <a href="mailto:belisarioluis21@gmail.com">belisarioluis21@gmail.com</a></span>
+          <span class="cv-contact-item"><i class="ri-phone-line"></i> <a href="tel:+34663102885">+34 663 102 885</a></span>
+          <span class="cv-contact-item"><i class="ri-linkedin-box-line"></i> <a href="https://www.linkedin.com/in/luisbelisario" target="_blank" rel="noopener">linkedin.com/in/luisbelisario</a></span>
+          <span class="cv-contact-item"><i class="ri-github-line"></i> <a href="https://github.com/Lebs87" target="_blank" rel="noopener">github.com/Lebs87</a></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Body (2 Columns) -->
+    <div class="cv-body">
+      
+      <!-- Main Column: Summary, Experience & Featured Project -->
+      <section class="cv-main-col">
+        
+        <!-- Summary Section -->
+        <article class="cv-section">
+          <h3 class="cv-section-title"><i class="ri-user-3-line"></i> <span data-cv-i18n="summaryTitle">Perfil Profesional</span></h3>
+          <p class="cv-summary" data-cv-i18n="summaryText">
+            Full Stack Developer y Licenciado con sólida experiencia en desarrollo de aplicaciones web escalables, APIs y soluciones de Business Intelligence orientadas a negocio. Especializado en JavaScript/TypeScript, React y Node.js, participando en sectores de logística, seguros, e-commerce y Big Data. Experiencia contrastada en desarrollo de dashboards en tiempo real, procesos ETL y optimización operativa con PostgreSQL y Power BI.
+          </p>
+        </article>
+
+        <!-- Experience Section -->
+        <article class="cv-section">
+          <h3 class="cv-section-title"><i class="ri-briefcase-line"></i> <span data-cv-i18n="experienceTitle">Experiencia Profesional</span></h3>
+
+          <!-- Neotalent (SICE) -->
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-role" data-cv-i18n="roles.neotalent.role">Full Stack Developer | BI Developer | Data Analyst</span>
+              <span class="exp-period" data-cv-i18n="roles.neotalent.period">Mayo 2024 – Actual</span>
+            </div>
+            <div class="exp-company">Neotalent (SICE) • Madrid, España</div>
+            <ul class="exp-bullets">
+              <li data-cv-i18n="roles.neotalent.b1">Desarrollo y mantenimiento de aplicaciones web frontend y backend para clientes internos y externos.</li>
+              <li data-cv-i18n="roles.neotalent.b2">Diseño y desarrollo de dashboards de Business Intelligence, monitoreo de operaciones y visualización de datos históricos y en tiempo real.</li>
+              <li data-cv-i18n="roles.neotalent.b3">Optimización y automatización de procesos operativos utilizando React, Node.js, Python y PostgreSQL.</li>
+            </ul>
+            <div class="exp-stack">
+              <strong>Stack:</strong> React, Node.js, TypeScript, Python, PostgreSQL, Express, Docker, Power BI, Grafana.
+            </div>
+          </div>
+
+          <!-- Celta Consulting -->
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-role" data-cv-i18n="roles.celta.role">Full Stack Developer</span>
+              <span class="exp-period">Feb 2022 – Mayo 2024</span>
+            </div>
+            <div class="exp-company">Celta Consulting • Remoto</div>
+            <ul class="exp-bullets">
+              <li data-cv-i18n="roles.celta.b1">Desarrollo e implementación de soluciones web para gestión integral de flotas y administración de pólizas de seguros.</li>
+              <li data-cv-i18n="roles.celta.b2">Participación activa en el desarrollo de sistemas internos para RRHH, liquidaciones y operaciones administrativas.</li>
+              <li data-cv-i18n="roles.celta.b3">Colaboración bajo metodologías ágiles (Scrum/Trello) garantizando entregas incrementales y código limpio.</li>
+            </ul>
+            <div class="exp-stack">
+              <strong>Stack:</strong> React, Angular, Redux, Node.js, TypeScript, MySQL, MongoDB, Scrum.
+            </div>
+          </div>
+
+          <!-- Gurus AWS / Conectando Materiales -->
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-role" data-cv-i18n="roles.gurus.role">Full Stack Developer / Frontend Leader</span>
+              <span class="exp-period">Jun 2023 – Oct 2023</span>
+            </div>
+            <div class="exp-company">Celta Consulting (Gurus AWS - Conectando Materiales) • Remoto</div>
+            <ul class="exp-bullets">
+              <li data-cv-i18n="roles.gurus.b1">Liderazgo técnico de Frontend en plataforma web B2B de subastas de productos y servicios industriales.</li>
+              <li data-cv-i18n="roles.gurus.b2">Estimación técnica, resolución de incidencias complejas y despliegue de mejoras funcionales continuas.</li>
+              <li data-cv-i18n="roles.gurus.b3">Implementación de estándares de calidad y control de versiones con Git y AWS CodeCommit.</li>
+            </ul>
+            <div class="exp-stack">
+              <strong>Stack:</strong> React, Redux, TypeScript, Node.js, Axios, AWS CodeCommit.
+            </div>
+          </div>
+
+          <!-- Freelance -->
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-role" data-cv-i18n="roles.freelance.role">Web Developer Freelance</span>
+              <span class="exp-period">Sep 2021 – Feb 2022</span>
+            </div>
+            <div class="exp-company" data-cv-i18n="roles.freelance.company">Proyectos Independientes • Remoto</div>
+            <ul class="exp-bullets">
+              <li data-cv-i18n="roles.freelance.b1">Desarrollo y personalización de páginas web para comercio electrónico y nuevos emprendimientos.</li>
+              <li data-cv-i18n="roles.freelance.b2">Implementación de diseños responsivos y optimización de velocidad de carga y visualización.</li>
+            </ul>
+            <div class="exp-stack">
+              <strong>Stack:</strong> JavaScript, React, SASS, HTML5, WordPress.
+            </div>
+          </div>
+
+        </article>
+
+        <!-- Featured Projects -->
+        <article class="cv-section">
+          <h3 class="cv-section-title"><i class="ri-rocket-line"></i> <span data-cv-i18n="projectsTitle">Proyecto Personal Destacado</span></h3>
+          <div class="project-cv-box">
+            <h5>Biblia Kiri — App Móvil (Google Play Store)</h5>
+            <p data-cv-i18n="bibliaDesc">
+              Aplicación móvil desarrollada con <strong>React Native y Firebase</strong>, publicada y activa en Google Play Store con funciones interactivas de lectura bíblica, planes, búsqueda y juegos.
+            </p>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Sidebar Column: Skills, Certifications & Languages -->
+      <aside class="cv-sidebar">
+        
+        <!-- Core Stack -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="ri-stack-line"></i> <span data-cv-i18n="coreStackTitle">Core Stack</span></h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">React</span>
+            <span class="skill-tag highlight">Node.js</span>
+            <span class="skill-tag highlight">TypeScript</span>
+            <span class="skill-tag highlight">PostgreSQL</span>
+            <span class="skill-tag highlight">Power BI</span>
+            <span class="skill-tag highlight">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="ri-tools-line"></i> <span data-cv-i18n="skillsTitle">Habilidades Técnicas</span></h3>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Frontend</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">HTML5 / CSS3</span>
+              <span class="skill-tag">SASS</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Backend & Data</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Python (ETL)</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Business Intelligence</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Grafana</span>
+              <span class="skill-tag">Power Query</span>
+              <span class="skill-tag">Power Automate</span>
+              <span class="skill-tag">Qlik</span>
+              <span class="skill-tag">ETL Pipelines</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Cloud & DevOps</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Git / GitHub</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Jira / Scrum</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="ri-award-line"></i> <span data-cv-i18n="certTitle">Certificados Oficiales</span></h3>
+          <ul class="cert-list-cv">
+            <li>
+              <a href="./assets/certificates/certificado-fullstack.jpg" target="_blank" rel="noopener noreferrer" class="cv-cert-link" id="cvCertFullstack" title="Ver diploma oficial">
+                <span>Full Stack Developer</span>
+                <span class="cv-cert-badge" data-cv-i18n="certBadge"><i class="ri-external-link-line"></i> Diploma</span>
+              </a>
+            </li>
+            <li>
+              <a href="./assets/certificates/certificado-backend.png" target="_blank" rel="noopener noreferrer" class="cv-cert-link" id="cvCertBackend" title="Ver diploma oficial">
+                <span>Backend Developer</span>
+                <span class="cv-cert-badge" data-cv-i18n="certBadge"><i class="ri-external-link-line"></i> Diploma</span>
+              </a>
+            </li>
+            <li>
+              <a href="./assets/certificates/certificado-react.jpg" target="_blank" rel="noopener noreferrer" class="cv-cert-link" id="cvCertReact" title="Ver diploma oficial">
+                <span>React JS (Top 10%)</span>
+                <span class="cv-cert-badge" data-cv-i18n="certBadge"><i class="ri-external-link-line"></i> Diploma</span>
+              </a>
+            </li>
+            <li>
+              <a href="./assets/certificates/certificado-angular.png" target="_blank" rel="noopener noreferrer" class="cv-cert-link" id="cvCertAngular" title="Ver diploma oficial">
+                <span>Angular Developer</span>
+                <span class="cv-cert-badge" data-cv-i18n="certBadge"><i class="ri-external-link-line"></i> Diploma</span>
+              </a>
+            </li>
+            <li>
+              <a href="./assets/certificates/certificado-js-coderhouse.png" target="_blank" rel="noopener noreferrer" class="cv-cert-link" id="cvCertJs" title="Ver diploma oficial">
+                <span>JavaScript Advanced</span>
+                <span class="cv-cert-badge" data-cv-i18n="certBadge"><i class="ri-external-link-line"></i> Diploma</span>
+              </a>
+            </li>
+            <li>
+              <a href="./assets/certificates/certificado-powerbi-udemy.jpg" target="_blank" rel="noopener noreferrer" class="cv-cert-link" id="cvCertPowerBi" title="Ver diploma oficial">
+                <span>Power BI & Data Analytics</span>
+                <span class="cv-cert-badge" data-cv-i18n="certBadge"><i class="ri-external-link-line"></i> Diploma</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="ri-global-line"></i> <span data-cv-i18n="langTitle">Idiomas</span></h3>
+          <div class="lang-cv">
+            <div><strong data-cv-i18n="langEs">Español:</strong> <span data-cv-i18n="langEsLevel">Nativo</span></div>
+            <div><strong data-cv-i18n="langEn">Inglés:</strong> <span data-cv-i18n="langEnLevel">B2 Profesional</span></div>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Bilingual & Format Script -->
+  <script>
+    const cvTranslations = {
+      es: {
+        back: "Volver al Portafolio",
+        print: "Guardar como PDF / Imprimir",
+        role: "Full Stack Developer | BI & Data Analyst",
+        location: "Madrid, España",
+        summaryTitle: "Perfil Profesional",
+        summaryText: "Full Stack Developer y Licenciado con sólida experiencia en desarrollo de aplicaciones web escalables, APIs y soluciones de Business Intelligence orientadas a negocio. Especializado en JavaScript/TypeScript, React y Node.js, participando en sectores de logística, seguros, e-commerce y Big Data. Experiencia contrastada en desarrollo de dashboards en tiempo real, procesos ETL y optimización operativa con PostgreSQL y Power BI.",
+        experienceTitle: "Experiencia Profesional",
+        projectsTitle: "Proyecto Personal Destacado",
+        bibliaDesc: "Aplicación móvil desarrollada con React Native y Firebase, publicada y activa en Google Play Store con funciones interactivas de lectura bíblica, planes, búsqueda y juegos.",
+        coreStackTitle: "Core Stack",
+        skillsTitle: "Habilidades Técnicas",
+        certTitle: "Certificados Oficiales",
+        certBadge: '<i class="ri-external-link-line"></i> Diploma',
+        langTitle: "Idiomas",
+        langEs: "Español:",
+        langEsLevel: "Nativo",
+        langEn: "Inglés:",
+        langEnLevel: "B2 Profesional",
+        roles: {
+          neotalent: {
+            role: "Full Stack Developer | BI Developer | Data Analyst",
+            period: "Mayo 2024 – Actual",
+            b1: "Desarrollo y mantenimiento de aplicaciones web frontend y backend para clientes internos y externos.",
+            b2: "Diseño y desarrollo de dashboards de Business Intelligence, monitoreo de operaciones y visualización de datos históricos y en tiempo real.",
+            b3: "Optimización y automatización de procesos operativos utilizando React, Node.js, Python y PostgreSQL."
+          },
+          celta: {
+            role: "Full Stack Developer",
+            b1: "Desarrollo e implementación de soluciones web para gestión integral de flotas y administración de pólizas de seguros.",
+            b2: "Participación activa en el desarrollo de sistemas internos para RRHH, liquidaciones y operaciones administrativas.",
+            b3: "Colaboración bajo metodologías ágiles (Scrum/Trello) garantizando entregas incrementales y código limpio."
+          },
+          gurus: {
+            role: "Full Stack Developer / Frontend Leader",
+            b1: "Liderazgo técnico de Frontend en plataforma web B2B de subastas de productos y servicios industriales.",
+            b2: "Estimación técnica, resolución de incidencias complejas y despliegue de mejoras funcionales continuas.",
+            b3: "Implementación de estándares de calidad y control de versiones con Git y AWS CodeCommit."
+          },
+          freelance: {
+            role: "Web Developer Freelance",
+            company: "Proyectos Independientes • Remoto",
+            b1: "Desarrollo y personalización de páginas web para comercio electrónico y nuevos emprendimientos.",
+            b2: "Implementación de diseños responsivos y optimización de velocidad de carga y visualización."
+          }
+        }
+      },
+      en: {
+        back: "Back to Portfolio",
+        print: "Save as PDF / Print",
+        role: "Full Stack Developer | BI & Data Analyst",
+        location: "Madrid, Spain",
+        summaryTitle: "Professional Profile",
+        summaryText: "Full Stack Developer and Graduate with extensive experience developing scalable web applications, APIs, and business-driven Business Intelligence solutions. Specialized in JavaScript/TypeScript, React, and Node.js across logistics, insurance, e-commerce, and Big Data industries. Proven track record in building real-time dashboards, ETL pipelines, and operational optimization with PostgreSQL and Power BI.",
+        experienceTitle: "Work Experience",
+        projectsTitle: "Featured Personal Project",
+        bibliaDesc: "Full-featured mobile application developed with React Native and Firebase, published and live on Google Play Store featuring interactive reading, study plans, search, and educational games.",
+        coreStackTitle: "Core Stack",
+        skillsTitle: "Technical Skills",
+        certTitle: "Official Certifications",
+        certBadge: '<i class="ri-external-link-line"></i> Diploma',
+        langTitle: "Languages",
+        langEs: "Spanish:",
+        langEsLevel: "Native",
+        langEn: "English:",
+        langEnLevel: "B2 Professional Working",
+        roles: {
+          neotalent: {
+            role: "Full Stack Developer | BI Developer | Data Analyst",
+            period: "May 2024 – Present",
+            b1: "Development and maintenance of frontend and backend web applications for internal and external enterprise clients.",
+            b2: "Design and deployment of BI dashboards, operational monitoring, and visualization of historical and real-time operational data.",
+            b3: "Optimization and automation of business processes using React, Node.js, Python, and PostgreSQL."
+          },
+          celta: {
+            role: "Full Stack Developer",
+            b1: "Development of web solutions and platforms for fleet management and insurance policy administration.",
+            b2: "Active contribution to internal enterprise systems for Human Resources, payroll, and operations.",
+            b3: "Collaborative teamwork under Agile frameworks (Scrum/Trello) ensuring continuous delivery and clean, maintainable code."
+          },
+          gurus: {
+            role: "Full Stack Developer / Frontend Leader",
+            b1: "Frontend technical leadership for an industrial B2B auction and procurement marketplace platform.",
+            b2: "Technical estimation, complex incident resolution, and incremental feature deployment.",
+            b3: "Enforced code quality standards and team version control with Git and AWS CodeCommit."
+          },
+          freelance: {
+            role: "Web Developer Freelance",
+            company: "Independent Projects • Remote",
+            b1: "Development and customization of responsive websites for e-commerce and startups.",
+            b2: "Visual performance optimization and responsive interface implementation."
+          }
+        }
+      }
+    };
+
+    function switchCvLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('.cv-lang-btn').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+      });
+
+      const t = cvTranslations[lang];
+      document.getElementById('backText').textContent = t.back;
+      document.getElementById('printBtnText').textContent = t.print;
+
+      document.querySelectorAll('[data-cv-i18n]').forEach(el => {
+        const key = el.getAttribute('data-cv-i18n');
+        const keys = key.split('.');
+        let val = t;
+        for (const k of keys) {
+          if (val && val[k] !== undefined) val = val[k];
+          else { val = null; break; }
+        }
+        if (val) el.innerHTML = val;
+      });
+
+      const backendLink = document.getElementById("cvCertBackend");
+      const jsLink = document.getElementById("cvCertJs");
+      if (backendLink) {
+        backendLink.href = lang === "en"
+          ? "./assets/certificates/certificate-backend.png"
+          : "./assets/certificates/certificado-backend.png";
+      }
+      if (jsLink) {
+        jsLink.href = lang === "en"
+          ? "./assets/certificates/certificate-js-coderhouse.png"
+          : "./assets/certificates/certificado-js-coderhouse.png";
+      }
+      localStorage.setItem('lebs_portfolio_lang', lang);
+    }
+
+    // Auto-detect from localStorage
+    const savedLang = localStorage.getItem('lebs_portfolio_lang') || 'es';
+    switchCvLang(savedLang);
+  </script>
+
+</body>
+
+</html>

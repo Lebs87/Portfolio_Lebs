@@ -1,2 +1,36 @@
+# Dependencies
 /node_modules
+/.pnp
+.pnp.js
+
+# Private / Local only files (DO NOT COMMIT)
+/oculto
+oculto/
 notas.md
+server.js
+
+# Intermediate photo test assets & unlinked heavy drafts
+assets/images/fotoluis_pro1.jpg
+assets/images/fotoluis_pro2.jpg
+assets/images/fotoluis_pro_natural.jpg
+assets/images/fotoluis_original.jpeg
+
+# Logs & Environment
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

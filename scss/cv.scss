@@ -1,0 +1,720 @@
+/* ==========================================================================
+   MODERN RESUME / CV - ADAPTIVE 1-PAGE & 2-PAGE PRINT DESIGN SYSTEM
+   Luis Belisario - Full Stack Developer | BI & Data Analyst
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+  --primary: #0284c7;        /* Professional Tech Blue */
+  --primary-dark: #0369a1;
+  --primary-light: #e0f2fe;
+  --secondary: #475569;      /* Slate */
+  --dark: #0f172a;           /* Deep Obsidian */
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --bg-page: #0b0f19;
+  --bg-card: #ffffff;
+  --border: #e2e8f0;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 2rem 1rem;
+}
+
+/* Screen Top Bar */
+.cv-toolbar {
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cv-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #7dd3fc;
+    transform: translateX(-3px);
+  }
+}
+
+.cv-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.lang-switch-group {
+  display: flex;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.cv-lang-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &.active {
+    background: #38bdf8;
+    color: #0f172a;
+  }
+}
+
+.print-btn {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.45);
+  }
+}
+
+/* CV Document Sheet (Screen View) */
+.cv-sheet {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+/* Header Area */
+.cv-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 2.25rem 2.5rem 1.75rem 2.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  border-bottom: 3px solid var(--primary);
+}
+
+.cv-avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  overflow: hidden;
+  background: #1e293b;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+.cv-title-area {
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.4px;
+  }
+}
+
+.cv-contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.cv-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  a {
+    color: #cbd5e1;
+    text-decoration: none;
+
+    &:hover {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Two Column Layout */
+.cv-body {
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  padding: 2rem 2.5rem;
+  gap: 2.5rem;
+}
+
+/* Section Common */
+.cv-section {
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-section-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--primary-dark);
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  i {
+    font-size: 1.05rem;
+    color: var(--primary);
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+/* About / Summary */
+.cv-summary {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Experience Items */
+.exp-item {
+  margin-bottom: 1.35rem;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.exp-role {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.exp-period {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  background: var(--primary-light);
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.exp-company {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 0.4rem;
+}
+
+.exp-bullets {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.85rem;
+  color: #334155;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+
+  li {
+    position: relative;
+    padding-left: 1.1rem;
+    line-height: 1.48;
+
+    &::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+  }
+}
+
+.exp-stack {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+
+  strong {
+    color: var(--dark);
+  }
+}
+
+/* Featured Projects Box */
+.project-cv-box {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem;
+
+  h5 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    line-height: 1.45;
+  }
+}
+
+/* Sidebar Sections */
+.cv-sidebar {
+  border-left: 1px solid var(--border);
+  padding-left: 1.75rem;
+}
+
+.skill-group {
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.skill-group-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.4rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.skill-tag {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #1e293b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+
+  &.highlight {
+    background: var(--primary-light);
+    border-color: #bae6fd;
+    color: var(--primary-dark);
+  }
+}
+
+/* Certifications */
+.cert-list-cv {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  color: var(--secondary);
+
+  li {
+    position: relative;
+    padding-left: 1.1rem;
+
+    &::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+  }
+}
+
+.cv-cert-link {
+  color: var(--secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+.cv-cert-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  background: rgba(2, 132, 199, 0.1);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  border-radius: 4px;
+  color: var(--primary);
+  line-height: 1;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+}
+
+.cv-cert-link:hover .cv-cert-badge {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* Languages */
+.lang-cv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.84rem;
+  color: var(--secondary);
+}
+
+/* ==========================================================================
+   PRINT STYLES (@media print) - ZERO WHITE VOIDS, EXACT PROPORTIONS
+   ========================================================================== */
+@page {
+  size: A4 portrait;
+  margin: 6mm 8mm;
+}
+
+@media print {
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .cv-toolbar {
+    display: none !important;
+  }
+
+  .cv-sheet {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+      /* ------------------------------------------------------------------------
+     DEFAULT & 1-PAGE MODE: Fits the complete CV on 1 BALANCED, ELEGANT A4 sheet
+     ------------------------------------------------------------------------ */
+  body.format-1page, body:not(.format-2page) {
+    font-size: 8.7pt !important;
+    line-height: 1.38 !important;
+
+    .cv-header {
+      background: #0f172a !important;
+      color: #ffffff !important;
+      padding: 15px 20px !important;
+      gap: 18px !important;
+      grid-template-columns: auto 1fr !important;
+      margin-bottom: 0 !important;
+      border-bottom: 2.5px solid #0284c7 !important;
+    }
+
+    .cv-avatar {
+      width: 66px !important;
+      height: 66px !important;
+      border-width: 2px !important;
+    }
+
+    .cv-title-area h1 {
+      font-size: 14.5pt !important;
+      margin-bottom: 2px !important;
+      color: #ffffff !important;
+    }
+
+    .cv-title-area h2 {
+      font-size: 9.5pt !important;
+      color: #38bdf8 !important;
+      margin-bottom: 5px !important;
+    }
+
+    .cv-contact-bar {
+      gap: 14px !important;
+      font-size: 7.6pt !important;
+    }
+
+    .cv-contact-item {
+      font-size: 7.6pt !important;
+      color: #cbd5e1 !important;
+    }
+
+    .cv-body {
+      display: grid !important;
+      grid-template-columns: 1fr 235px !important;
+      padding: 13px 20px !important;
+      gap: 20px !important;
+    }
+
+    .cv-section {
+      margin-bottom: 11px !important;
+    }
+
+    .cv-section-title {
+      font-size: 9.3pt !important;
+      margin-bottom: 6px !important;
+      padding-bottom: 3px !important;
+      border-bottom-width: 1.5px !important;
+      color: #0f172a !important;
+
+      i {
+        font-size: 9.5pt !important;
+        color: #0284c7 !important;
+      }
+    }
+
+    .cv-summary {
+      font-size: 8.2pt !important;
+      line-height: 1.4 !important;
+    }
+
+    .exp-item {
+      margin-bottom: 9px !important;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    .exp-header {
+      margin-bottom: 2px !important;
+    }
+
+    .exp-role {
+      font-size: 8.8pt !important;
+    }
+
+    .exp-period {
+      font-size: 7.2pt !important;
+      padding: 1px 5px !important;
+      background: #f1f5f9 !important;
+      color: #0284c7 !important;
+    }
+
+    .exp-company {
+      font-size: 7.8pt !important;
+      margin-bottom: 2.5px !important;
+    }
+
+    .exp-bullets {
+      padding-left: 10px !important;
+      gap: 2px !important;
+      margin-bottom: 3px !important;
+    }
+
+    .exp-bullets li {
+      font-size: 8pt !important;
+      line-height: 1.34 !important;
+      margin-bottom: 1.5px !important;
+    }
+
+    .exp-stack {
+      font-size: 7.2pt !important;
+      padding: 2px 5.5px !important;
+      margin-top: 2px !important;
+      background: #f8fafc !important;
+      border-radius: 4px !important;
+    }
+
+    .project-cv-box {
+      padding: 7px 10px !important;
+      margin-bottom: 0 !important;
+      border-radius: 6px !important;
+      background: #f8fafc !important;
+    }
+
+    .project-cv-box h5 {
+      font-size: 8.4pt !important;
+      margin-bottom: 2px !important;
+    }
+
+    .project-cv-box p {
+      font-size: 7.8pt !important;
+      line-height: 1.32 !important;
+    }
+
+    .cv-sidebar {
+      padding-left: 15px !important;
+      border-left: 1px solid #e2e8f0 !important;
+    }
+
+    .skill-group {
+      margin-bottom: 7px !important;
+    }
+
+    .skill-group-title {
+      font-size: 7.6pt !important;
+      margin-bottom: 3px !important;
+    }
+
+    .skill-tags {
+      gap: 3.5px !important;
+    }
+
+    .skill-tag {
+      font-size: 7.2pt !important;
+      padding: 1.5px 5px !important;
+      border-radius: 3px !important;
+      border-color: #cbd5e1 !important;
+    }
+
+    .skill-tag.highlight {
+      background: #e0f2fe !important;
+      color: #0369a1 !important;
+    }
+
+    .cert-list-cv {
+      gap: 3.5px !important;
+      font-size: 7.6pt !important;
+    }
+
+    .cert-list-cv li {
+      padding-left: 12px !important;
+    }
+
+    .cv-cert-badge {
+      display: none !important;
+    }
+
+    .lang-cv {
+      font-size: 7.8pt !important;
+      gap: 3.5px !important;
+    }
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}
+
+/* Responsive Screen View */
+@media screen and (max-width: 768px) {
+  .cv-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .cv-avatar {
+    margin: 0 auto;
+  }
+
+  .cv-contact-bar {
+    justify-content: center;
+  }
+
+  .cv-body {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .cv-sidebar {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+}
